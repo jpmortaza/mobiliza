@@ -1,0 +1,87 @@
+/*
+    ========================================================
+    ESTILOS GLOBAIS
+    ========================================================
+    Este arquivo foi atualizado para manter a consistência
+    do estilo neutro em todo o sistema.
+*/
+
+:root {
+    --primary-color: #6c757d; /* Cinza médio */
+    --secondary-color: #f8f9fa; /* Cinza muito claro */
+    --background-color: #f8f9fa; /* Cinza muito claro para o fundo da página */
+    --text-color: #343a40; /* Cinza escuro para o texto */
+    --link-color: #495057; /* Cinza escuro para links */
+    --border-color: #dee2e6; /* Cinza claro para bordas */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #495057;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Formulários */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Layout básico */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
